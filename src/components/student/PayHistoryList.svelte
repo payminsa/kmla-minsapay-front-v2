@@ -4,6 +4,14 @@
 </script>
 
 <style>
+  .pay-history-list {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   table {
     width: 100%;
     border-collapse: collapse;
@@ -23,7 +31,7 @@
   }
 </style>
 
-<div>
+<div class="pay-history-list">
   {#if $studentStore}
     <h2>{$studentStore.name}님의 결제 내역</h2>
 
