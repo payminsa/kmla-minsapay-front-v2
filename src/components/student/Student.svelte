@@ -22,7 +22,7 @@
 </style>
 
 <div class="student-container">
-  <img class="icon" src="/favicon.png" alt="Icon" width="100" height="100" />
+  <img class="icon" src="/credit-card.png" alt="Icon" width="100" height="100" />
   <IDForm />
   <PayHistoryList />
 </div>

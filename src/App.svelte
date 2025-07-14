@@ -40,7 +40,7 @@
     /* flex-direction: column; */
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ccc;
+    /* border-bottom: 1px solid #ccc; */
     padding: 0px 16px;
   }
   @media screen and (max-width: 640px) {
@@ -50,6 +50,7 @@
     .flex-container-header {
       flex-direction: column;
       align-items: center;
+      border-bottom: 1px solid #ccc;
     }
     .container {
       padding: 0;
