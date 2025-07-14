@@ -36,6 +36,9 @@
     border: 0px;
     border-left: 1px solid lightgray;
   }
+  input:focus {
+    outline: none;
+  }
   .search-button {
     width: 15%;
     height: 100%;
