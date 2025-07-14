@@ -17,7 +17,7 @@
   }
   ul {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 0;
     list-style-type: none;
     justify-content: center;
@@ -36,10 +36,12 @@
     화면 크기가 줄어들면 가로 방향의 메뉴바를 세로로 변경한다.
     */
     ul {
-      flex-direction: column;
+      /* flex-direction: column; */
+      flex-direction: row;
     }
     li {
       margin-bottom: 15px;
+      font-size: 20px;
     }
   }
 </style>

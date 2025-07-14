@@ -16,24 +16,53 @@
 <style>
   main {
     text-align: center;
-    padding: 3em;
+    /* padding: 3em; */
     margin: 0 auto;
     max-width: none;
   }
   .container {
     margin: 2em;
+    padding: 0 20%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  .flex-container-header {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 0px 16px;
   }
   @media screen and (max-width: 640px) {
     main {
       padding: 1em;
     }
+    .flex-container-header {
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      padding: 0;
+      margin: 2em 0;
+    }
   }
 </style>
 
-<main>
-  <Header />
-
-  <Tabs {items} {activeItem} on:tabChange={tabChangeHandler} />
+<main class="main">
+  <div class="flex-container-header">
+    <Header />
+    <Tabs {items} {activeItem} on:tabChange={tabChangeHandler} />
+  </div>
   <div class="container">
     {#if activeItem === '학생 메뉴'}
       <Student />

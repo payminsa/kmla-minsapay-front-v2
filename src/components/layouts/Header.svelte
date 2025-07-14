@@ -1,14 +1,16 @@
 <style>
   header {
     background-color: white;
-    margin: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  h1 {
-    text-align: center;
-  }
+  /* h1 {
+    margin: 0px 8px;
+  } */
 </style>
 
 <header>
-  <h1>민사페이</h1>
+  <h1><a href="/" style="color: black; text-decoration: none;">Minsa Pay</a></h1>
 </header>

@@ -23,7 +23,7 @@
   }
 </style>
 
-<Card>
+<div>
   {#if $studentStore}
     <h2>{$studentStore.name}님의 결제 내역</h2>
 
@@ -58,4 +58,4 @@
   {:else}
     <p>학번을 입력하여 결제 내역을 확인하세요</p>
   {/if}
-</Card>
+</div>
